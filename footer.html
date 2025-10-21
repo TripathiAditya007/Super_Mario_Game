@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Page</title>
+</head>
+<body bgcolor="grey">
+    <marquee direction="right" behavior="alternate" scrollamount="10">
+        <img id="mario" src="assets/mario.gif" width="80" height="80" style="transform: scaleX(1);">
+        
+        <script>
+            let angle = 0;
+            const mario = document.getElementById('mario');
+            setInterval(() => {
+            angle += 90;
+            if (angle % 180 !== 0) {
+                mario.style.transform = 'scaleX(-1)';
+            } else {
+                mario.style.transform = 'scaleX(1)';
+            }
+            }, 12100); // Adjust the interval as needed
+        </script>
+    </marquee>
+</body>
+
+</html>
